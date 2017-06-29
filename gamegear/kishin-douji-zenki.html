@@ -1,0 +1,16 @@
+<canvas id="emulator-target" style="width: 728px; height: 655px; display: block; margin: 0 auto;"></canvas>
+		<script type="text/javascript" src="/loader.js"></script>
+		<script type="text/javascript">
+			var emulator = new RetroJolt( {
+				loadingImg: '/logo/gamegear.png',
+				scale: 4.55,
+				js: '/driver/segams.js',
+				driver: 'gamegear',
+				cfg: '/cfg/gamegear.cfg',
+				bios: [ '/bios/gamegear.zip' ],
+				peripherals: [ 'cart' ],
+				resolution: [ 160, 144 ],
+				rom: '/gamegear/games/kishin-douji-zenki.zip',
+			} );
+		</script>
+<span style="color: #ad3a2b">Start-Enter 1-Z 2-X. Use Firefox browser for best game performance. USB Gamepad support. See HELP tab.</span></p>

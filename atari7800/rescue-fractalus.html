@@ -1,0 +1,16 @@
+<canvas id="emulator-target" style="width: 728px; height: 510px; display: block; margin: 0 auto;"></canvas>
+		<script type="text/javascript" src="/loader.js"></script>
+		<script type="text/javascript">
+			var emulator = new RetroJolt( {
+				loadingImg: '/logo/atari7800.png',
+				scale: 2.275,
+				js: '/driver/a7800.js',
+				driver:  'a7800',
+                                bios: [ '/bios/a7800.zip' ],
+				cfg: '/cfg/a7800.cfg',
+				peripherals: [ 'cart' ],
+				resolution: [ 320, 225 ],
+				rom: '/atari7800/games/rescue-fractalus.zip',
+			} );
+		</script>
+<span style="color: #ad3a2b">Game buttons: 1-LCtrl 2-LAlt Use Firefox for best game performance. USB Gamepad support. See HELP tab.</span></p>

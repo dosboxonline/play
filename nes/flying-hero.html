@@ -1,0 +1,15 @@
+<canvas id="emulator-target" style="width: 728px; height: 682px; display: block; margin: 0 auto;"></canvas>
+<script type="text/javascript" src="/loader.js"></script>
+<script type="text/javascript">
+			var emulator = new RetroJolt( {
+				loadingImg: '/logo/nintendo.png',
+				scale: 2.844375,
+				js: '/driver/nes.js',
+				driver: 'nes',
+				cfg: '/cfg/nes.cfg',
+				peripherals: [ 'cart' ],
+				resolution: [ 256, 240 ],
+				rom: '/nes/games/flying-hero.zip',
+			} );
+		</script>
+<span style="color: #ad3a2b">Start-Enter Select-Space A-Z B-X. Use Firefox for best game performance. USB Gamepad support. See HELP.</span></p>

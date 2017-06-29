@@ -1,0 +1,16 @@
+		<canvas id="emulator-target" style="width: 728px; height: 624px; display: block; margin: 0 auto;"></canvas>
+		<script type="text/javascript" src="/loader.js"></script>
+		<script type="text/javascript">
+			var emulator = new RetroJolt( {
+				loadingImg: '/logo/msx.png',
+				scale: 2.6764705,
+				js: '/driver/msx.js',
+				driver: 'mlg10',
+				bios: [ '/bios/mlg10.zip' ],
+				cfg: '/cfg/msx.cfg',
+				peripherals: [ 'cart1' ],
+				resolution: [ 272, 233 ],
+				rom: '/msx/games/metal-gear-2.zip',
+			} );
+		</script>
+<span style="color: #ad3a2b">Keys: LCtrl, LAlt, Space. Use Firefox for best game performance. USB Gamepad support. See HELP tab.</span></p>

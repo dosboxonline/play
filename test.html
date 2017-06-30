@@ -1,0 +1,16 @@
+<canvas id="emulator-target" style="width: 728px; height: 655px; display: block; margin: 0 auto;"></canvas>
+		<script type="text/javascript" src="/loader.js"></script>
+		<script type="text/javascript">
+			var emulator = new RetroJolt( {
+				loadingImg: '/logo/gamegear.png',
+				scale: 2,
+				js: '/driver/snk.js',
+				driver: 'aes',
+				cfg: '/cfg/snk.cfg',
+				bios: [ '/bios/aes.zip' ],
+				peripherals: [ 'cart' ],
+				resolution: [ 320, 224 ],
+				rom: 'https://dosbox.online/games/mslug5.zip',
+			} );
+		</script>
+<span style="color: #ad3a2b">Start-Enter 1-Z 2-X. Use Firefox browser for best game performance. USB Gamepad support. See HELP tab.</span></p>

@@ -7,10 +7,11 @@
 				js: '/driver/amstrad.js',
 				driver: 'cpc6128p',
 				cfg: '/cfg/amstrad.cfg',
-				bios: [ '/bios/cpc6128.zip' ],
-				peripherals: [ 'cart' ],
+				bios: [ '/bios/cpc6128.zip', '/bios/cpc464.zip' ],
+				peripherals: [ 'flop1' ],
 				resolution: [ 384, 272 ],
 				rom: '/amstrad/games/chase-hq.zip',
+				args: ['-ab', 'run"chase-hq\\n', "-autoboot_delay", "2" ],
 			} );
 		</script>
 <span style="color: #ad3a2b">Keys: LCtrl, LAlt, Space. Use Firefox for best game performance. USB Gamepad support. See HELP tab.</span></p>

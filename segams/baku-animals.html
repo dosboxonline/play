@@ -1,0 +1,16 @@
+<canvas id="emulator-target" style="width: 728px; height: 608px; display: block; margin: 0 auto;"></canvas>
+		<script type="text/javascript" src="/loader.js"></script>
+		<script type="text/javascript">
+			var emulator = new RetroJolt( {
+				loadingImg: '/logo/segams.png',
+				scale: 2.7164179,
+				js: '/driver/segams.js',
+				driver: 'sms',
+				cfg: '/cfg/sms.cfg',
+				bios: [ '/bios/sms.zip' ],
+				peripherals: [ 'cart' ],
+				resolution: [ 268, 224 ],
+				rom: '/segams/games/baku-animals.zip',
+			} );
+		</script>
+<span style="color: #ad3a2b">Start/1-Z 2-X. Use Firefox browser for best game performance. USB Gamepad support. See HELP tab.</span></p>

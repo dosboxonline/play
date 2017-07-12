@@ -1,0 +1,15 @@
+<canvas id="emulator-target" style="width: 728px; height: 510px; display: block; margin: 0 auto;"></canvas>
+		<script type="text/javascript" src="/loader.js"></script>
+		<script type="text/javascript">
+			var emulator = new RetroJolt( {
+				loadingImg: '/logo/genesis.png',
+				scale: 2.275,
+				js: '/driver/genesis.js',
+				driver: 'genesis',
+				cfg: '/cfg/genesis.cfg',
+				peripherals: [ 'cart' ],
+				resolution: [ 320, 224 ],
+				rom: '/genesis/games/lethal-inforcers.zip',
+			} );
+		</script>
+<span style="color: #ad3a2b">Start-Enter A-Z B-X C-C. Use Firefox for best game performance. USB Gamepad support. See HELP tab.</span></p>

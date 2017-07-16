@@ -1,4 +1,3 @@
-header('Access-Control-Allow-Origin: *'); 
 <p><span style="color: #ad3a2b">Click on this text to enter the game. To unlock mouse press Esc key.</span></p>
 <div id="container" style="height: 100%; overflow: auto; width: 100%;">
 <div id="contained" style="height: 0px; transform: scale(1.1375); width: 0px;">
@@ -10,19 +9,18 @@ header('Access-Control-Allow-Origin: *');
     <script type="text/javascript">
       var emulator = new Emulator(document.querySelector("#canvas"),
                                   null,
-                                  new DosBoxLoader(DosBoxLoader.emulatorJS("https://dosbox.online/dos/dosbox.js"),
+                                  new DosBoxLoader(DosBoxLoader.emulatorJS("/dos/dosbox.js"),
                                                    DosBoxLoader.locateAdditionalEmulatorJS(locateAdditionalFiles),
                                                    DosBoxLoader.nativeResolution(640, 400),
                                                    DosBoxLoader.mountZip("c",
                                                                          DosBoxLoader.fetchFile("Game File",
-                                                                                                "https://dosbox.online/dos/w/wolf.zip")),
+                                                                                                "/dos/w/wolf.zip")),
                                                    DosBoxLoader.startExe("wolf.bat")))
       emulator.start({ waitAfterDownloading: true });
       function locateAdditionalFiles(filename) {
         if (filename === "dosbox.html.mem") {
-          return "https://dosbox.online/dos/dosbox-sync.mem";
+          return "/dos/dosbox-sync.mem";
         }
-        return "https://dosbox.online/dos/"+ filename;
+        return "/dos/"+ filename;
       }
     </script>
-<p><span style="color: #ad3a2b">Click on this text to enter the game. To unlock mouse press Esc key.</span></p>

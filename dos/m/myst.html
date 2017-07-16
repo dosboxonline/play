@@ -1,0 +1,24 @@
+<span style="color: #ad3a2b">Click on this text to enter the game. To unlock mouse press Esc key.</span><div id="container" style="height: 100%; overflow: auto; width: 100%;"><div id="contained" style="height: 0px; transform: scale(1.1375); width: 0px;">
+<div id="contained" style="transform: translate(0px,0px);">
+    <canvas id="canvas" style="width: 10%; height: 10%; display: block; margin: 0 auto;"/>
+    <script type="text/javascript" src="/dos/es6-promise.js"></script>
+    <script type="text/javascript" src="/dos/browserfs.min.js"></script>
+    <script type="text/javascript" src="/dos/loader.js"></script>
+    <script type="text/javascript">
+      var emulator = new Emulator(document.querySelector("#canvas"),
+                                  null,
+                                  new DosBoxLoader(DosBoxLoader.emulatorJS("/dos/dosbox.js"),
+                                                   DosBoxLoader.locateAdditionalEmulatorJS(locateAdditionalFiles),
+                                                   DosBoxLoader.nativeResolution(640, 400),
+                                                   DosBoxLoader.mountZip("c",
+                                                                         DosBoxLoader.fetchFile("Game File",
+                                                                                                "https://dosbox.online/dos/m/myst14.zip")),
+                                                   DosBoxLoader.startExe("myst14.bat")))
+      emulator.start({ waitAfterDownloading: true });
+      function locateAdditionalFiles(filename) {
+        if (filename === "dosbox.html.mem") {
+          return "/dos/dosbox-sync.mem";
+        }
+        return "/dos/"+ filename;
+      }
+    </script>

@@ -14,7 +14,7 @@
                                                                          DosBoxLoader.fetchFile("Game File",
                                                                                                 "/dos/w/wolf.zip")),
                                                    DosBoxLoader.startExe("wolf.bat")))
-      emulator.start({ waitAfterDownloading: false });
+      emulator.start({ waitAfterDownloading: true });
       function locateAdditionalFiles(filename) {
         if (filename === "dosbox.html.mem") {
           return "/dos/dosbox-sync.mem";

@@ -1335,7 +1335,7 @@ var Module = null;
      var drawsplash = function () {
        canvas.setAttribute('moz-opaque', '');
        if (!splash.splashimg.src) {
-         splash.splashimg.src = "logo/msdos.png";
+         splash.splashimg.src = "/logo/msdos.png";
        }
      };
 

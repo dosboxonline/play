@@ -1,0 +1,16 @@
+<canvas id="emulator-target" style="width: 728px; height: 484px; display: block; margin: 0 auto;"></canvas>
+		<script type="text/javascript" src="/loader.js"></script>
+		<script type="text/javascript">
+			var emulator = new RetroJolt( {
+				loadingImg: '/logo/gba.png',
+				scale: 3.0333333,
+				js: '/driver/gba.js',
+				driver: 'gba',
+                                bios: [ '/bios/gba.zip' ],
+				cfg: '/cfg/gba.cfg',
+				peripherals: [ 'cart' ],
+				resolution: [ 240, 160 ],
+				rom: '/gba/games/tmnt-gba.zip',
+			} );
+		</script>
+<span style="color: #ad3a2b">Start-Enter Select-Space B-Z A-X. Use Firefox for best game performance. USB Gamepad support. See HELP.</span></p>

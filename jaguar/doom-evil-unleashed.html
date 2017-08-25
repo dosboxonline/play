@@ -1,0 +1,16 @@
+<canvas id="emulator-target" style="width: 728px; height: 546px; display: block; margin: 0 auto;"></canvas>
+		<script type="text/javascript" src="/loader.js"></script>
+		<script type="text/javascript">
+			var emulator = new RetroJolt( {
+				loadingImg: '/logo/jaguar.png',
+				scale: 1.5166666,
+				js: '/driver/jaguar.js',
+				driver: 'jaguar',
+        bios: [ '/bios/jaguar.zip' ],
+				cfg: '/cfg/jaguar.cfg',
+				peripherals: [ 'cart' ],
+				resolution: [ 480, 360 ],
+				rom: '/jaguar/games/doom-evil-unleashed.zip',
+			} );
+		</script>
+<span style="color: #ad3a2b">Pause-I Option-O C-C B-X A-Z. Use Firefox for best game performance. USB Gamepad support. See HELP.</span></p>

@@ -1,15 +1,20 @@
-<canvas id="emulator-target" style="width: 728px; height: 682px; display: block; margin: 0 auto;"></canvas>
-<script type="text/javascript" src="/loader.js"></script>
-<script type="text/javascript">
-			var emulator = new RetroJolt( {
-				loadingImg: '/logo/nintendo.png',
-				scale: 2.844375,
-				js: '/driver/nes.js',
-				driver: 'nes',
-				cfg: '/cfg/nes.cfg',
-				peripherals: [ 'cart' ],
-				resolution: [ 256, 240 ],
-				rom: '/nes/games/excitebike.zip',
-			} );
-		</script>
-<span style="color: #ad3a2b">Start-Enter Select-Space A-Z B-X. Use Firefox for best game performance. USB Gamepad support. See HELP.</span></p>
+<link rel="stylesheet" href="https://mem.neptunjs.xyz/neptun/css/neptun.css" type="text/css">
+<div id="onl"></div>
+<script>
+var NepDefCon = '1';
+var NepPlayer = "#onl";
+var NepEmu = "nes";
+var NepZoom = "disable";
+var NepMaxWidth = "728px";
+var NepColor = "#ad3a2b";
+var NepAutoStart = true;
+var NepLang = "en";
+var gameUrl = "/nes/games/excitebike.zip";
+var SaveTitle = "excitebike";
+</script>
+<script src="https://mem.neptunjs.xyz/neptun/gge/njsLoader.js" type="text/javascript"></script>
+<p style="text-align: center">&nbsp;</p>
+<p style="text-align: center">&nbsp;</p>
+<p style="text-align: center">&nbsp;</p>
+<p style="text-align: center"><span style="font-size: 22px"><span style="color: #ad3a2b">Disable Adblock for start game.</span></span></p>
+<p style="text-align: center"><span style="font-size: 22px"><span style="color: #ad3a2b">For best performance recommended play in Firefox browser.</span></span></p>

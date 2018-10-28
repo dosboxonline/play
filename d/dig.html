@@ -1,30 +1,32 @@
-      <style>
+<style>
 .onl
 {
-        height: 546px;
+        height: 456px;
         width: 728px;
     }
-</style>   <div class="onl"> 
-<div id="contained" style="height: 0px; transform: scale(1.1375); width: 0px;">
-    <canvas id="canvas" style="width: 50%; height: 50%; display: block; margin: 0 auto;"/>    
+</style>  
+  <div class="onl"> 
+<div id="contained" style="height: 0px; transform: scale(1.1375); width: 0px;">   
+    <canvas id="canvas" style="width: 50%; height: 50%; display: block; margin: 0 auto;"/> 
+      
     <script type="text/javascript" src="/dosbox/es6-promise.js"></script>
     <script type="text/javascript" src="/dosbox/browserfs.min.js"></script>
     <script type="text/javascript" src="/dosbox/loader.js"></script>
+
     <script type="text/javascript">
       var emulator = new Emulator(document.querySelector("#canvas"),
                                   null,
-                                  new DosBoxLoader(DosBoxLoader.emulatorWASM("/dosbox/dosbox.wasm"),
-                                                   DosBoxLoader.emulatorJS("/dosbox/dosbox-sync.js"),
+                                  new DosBoxLoader(DosBoxLoader.emulatorJS("/dosbox/dosbox-sync.js"),
                                                    DosBoxLoader.locateAdditionalEmulatorJS(locateAdditionalFiles),
-                                                   DosBoxLoader.nativeResolution(640, 480),
+                                                   DosBoxLoader.nativeResolution(640, 400),
                                                    DosBoxLoader.mountZip("c",
                                                                          DosBoxLoader.fetchFile("Downloading",
-                                                                                                "https://roms.retrogames.onl/dos/t/torins-passage.zip")),
-                                                   DosBoxLoader.startExe("torrin.bat")))
+                                                                                                "https://roms.retrogames.onl/dos/d/dig.zip")),
+                                                   DosBoxLoader.startExe("digst.bat")))
       emulator.start({ waitAfterDownloading: false });
       function locateAdditionalFiles(filename) {
         if (filename === "dosbox.html.mem") {
-          return "/dosbox/dosbox-sync.mem";
+          return "/dosbox/dosbox-sync.html.mem";
         }
         return "/dosbox/"+ filename;
       }

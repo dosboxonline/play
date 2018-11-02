@@ -16,10 +16,10 @@
                                   new DosBoxLoader(DosBoxLoader.emulatorJS("/dosbox/dosbox-sync.js"),
                                                    DosBoxLoader.locateAdditionalEmulatorJS(locateAdditionalFiles),
                                                    DosBoxLoader.nativeResolution(640, 480),
-                                                   DosBoxLoader.mountZip("e",
+                                                   DosBoxLoader.mountZip("c",
                                                                          DosBoxLoader.fetchFile("Downloading",
                                                                                                 "https://roms.retrogames.onl/dos/d/dseed2.zip")),
-                                                   DosBoxLoader.startExe("dseed27.bat")))
+                                                   DosBoxLoader.startExe("dseed28.bat")))
       emulator.start({ waitAfterDownloading: false });
       function locateAdditionalFiles(filename) {
         if (filename === "dosbox.html.mem") {

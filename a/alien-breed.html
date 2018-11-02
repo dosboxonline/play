@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var emulator = new Emulator(document.querySelector("#canvas"),
                                   null,
-                                  new DosBoxLoader(DosBoxLoader.emulatorJS("/dosbox/dosbox-sync.js"),
+                                  new DosBoxLoader(DosBoxLoader.emulatorJS("https://archive.org/download/emularity_engine_v1/dosbox-sync.js.gz"),
                                                    DosBoxLoader.locateAdditionalEmulatorJS(locateAdditionalFiles),
                                                    DosBoxLoader.nativeResolution(640, 480),
                                                    DosBoxLoader.mountZip("c",
@@ -24,7 +24,7 @@
       emulator.start({ waitAfterDownloading: false });
       function locateAdditionalFiles(filename) {
         if (filename === "dosbox.html.mem") {
-          return "/dosbox/dosbox-sync.mem";
+          return "https://archive.org/download/emularity_engine_v1/dosbox-nosync.mem.gz";
         }
         return "/dosbox/"+ filename;
       }

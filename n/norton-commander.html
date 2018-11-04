@@ -22,7 +22,7 @@
                                                    DosBoxLoader.mountZip("e",
                                                                          DosBoxLoader.fetchFile("Downloading",
                                                                                                 "https://roms.retrogames.onl/dos/n/norton2.zip")),
-                                                   DosBoxLoader.startExe("nc.exe")))
+                                                   DosBoxLoader.startExe("e:nc.exe")))
       emulator.start({ waitAfterDownloading: false });
       function locateAdditionalFiles(filename) {
         if (filename === "dosbox.html.mem") {

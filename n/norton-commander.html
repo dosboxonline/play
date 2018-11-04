@@ -19,9 +19,9 @@
                                   new DosBoxLoader(DosBoxLoader.emulatorJS("/dosbox/dosbox-sync.js"),
                                                    DosBoxLoader.locateAdditionalEmulatorJS(locateAdditionalFiles),
                                                    DosBoxLoader.nativeResolution(640, 400),
-                                                   DosBoxLoader.mountZip("c",
+                                                   DosBoxLoader.mountZip("e",
                                                                          DosBoxLoader.fetchFile("Downloading",
-                                                                                                "https://roms.retrogames.onl/dos/n/norton1.zip")),
+                                                                                                "https://roms.retrogames.onl/dos/n/norton2.zip")),
                                                    DosBoxLoader.startExe("nc.exe")))
       emulator.start({ waitAfterDownloading: false });
       function locateAdditionalFiles(filename) {

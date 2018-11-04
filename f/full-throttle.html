@@ -19,10 +19,10 @@
                                   new DosBoxLoader(DosBoxLoader.emulatorJS("/dosbox-sync.js"),
                                                    DosBoxLoader.locateAdditionalEmulatorJS(locateAdditionalFiles),
                                                    DosBoxLoader.nativeResolution(640, 400),
-                                                   DosBoxLoader.mountZip("c",
+                                                   DosBoxLoader.mountZip("e",
                                                                          DosBoxLoader.fetchFile("Downloading",
                                                                                                 "https://roms.retrogames.onl/dos/f/fthrot.zip")),
-                                                   DosBoxLoader.startExe("fthrot1.bat")))
+                                                   DosBoxLoader.startExe("E:fthrot2.bat")))
       emulator.start({ waitAfterDownloading: false });
       function locateAdditionalFiles(filename) {
         if (filename === "dosbox.html.mem") {

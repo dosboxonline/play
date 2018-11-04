@@ -16,10 +16,10 @@
                                    new DosBoxLoader(DosBoxLoader.emulatorJS("/dosbox/dosbox-sync.js"),
                                                    DosBoxLoader.locateAdditionalEmulatorJS(locateAdditionalFiles),
                                                    DosBoxLoader.nativeResolution(640, 480),
-                                                   DosBoxLoader.mountZip("c",
+                                                   DosBoxLoader.mountZip("e",
                                                                          DosBoxLoader.fetchFile("Downloading",
-                                                                                                "https://roms.retrogames.onl/dos/s/shiv4.zip")),
-                                                   DosBoxLoader.startExe("shiv5.bat")))
+                                                                                                "https://roms.retrogames.onl/dos/s/shivers.zip")),
+                                                   DosBoxLoader.startExe("E:shiv6.bat")))
       emulator.start({ waitAfterDownloading: false });
       function locateAdditionalFiles(filename) {
         if (filename === "dosbox.html.mem") {

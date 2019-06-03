@@ -20,5 +20,12 @@
                                                                          DosBoxLoader.fetchFile("Downloading",
                                                                                                 "https://games.retrogames.onl/dos/s/shivers1.zip")),
                                                    DosBoxLoader.startExe("shiv7.bat")))
-      emulator.start({ waitAfterDownloading: false })
+      emulator.start({ waitAfterDownloading: false });
+      function locateAdditionalFiles(filename) {
+        if (filename === "dosbox.html.mem") {
+          return "/dosbox/dosbox-sync.mem";
+        }
+        return "/dosbox/"+ filename;
+      }
+         
     </script></div></div><input type="button" value="Fullscreen" onclick="Module.requestFullscreen(document.getElementById)"style="width: 80px; height: 20px; border: none; color: black; background-color: #ad3a2b; font-size: 14px; font-family: verdana; margin-top: -1px;"/>   <span style="font-size: 14px; color: #ad3a2b; font-family: verdana; margin-top: -1px; border: none;">Click on this text to focus keyboard on game</span>

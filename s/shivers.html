@@ -13,7 +13,8 @@
     <script type="text/javascript">
       var emulator = new Emulator(document.querySelector("#canvas"),
                                   null,
-                                   new DosBoxLoader(DosBoxLoader.emulatorJS("/dosbox/dosbox1.js"),                                               
+                                   new DosBoxLoader(DosBoxLoader.emulatorJS("/dosbox/dosbox1.js"),    
+                                                   DosBoxLoader.locateAdditionalEmulatorJS(locateAdditionalFiles),
                                                    DosBoxLoader.nativeResolution(640, 480),
                                                    DosBoxLoader.mountZip("e",
                                                                          DosBoxLoader.fetchFile("Downloading",

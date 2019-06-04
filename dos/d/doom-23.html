@@ -19,7 +19,7 @@
     Dos(document.getElementById("jsdos"), { 
         wdosboxUrl: "/games/dos/dosbox/wdosbox.js" 
     }).ready((fs, main) => {
-      fs.extract("https://games.retrogames.onl/dos/d/doom-2.zip, "/doom-2"").then(() => {
+      fs.extract("https://games.retrogames.onl/dos/d/doom-2.zip", "/doom-2").then(() => {
         main(["-c", "cd doom-2", "-c", "doom2.bat"])
       });
     });

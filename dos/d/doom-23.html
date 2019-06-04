@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Digger js-dos 6.22</title>
-  <script src="/dos/dosbox/js-dos.js"></script>
+  <script src="/games/dos/dosbox/js-dos.js"></script>
   <style>
     canvas {
       width: 640px;
@@ -17,7 +17,7 @@
   <canvas id="jsdos"></canvas>
   <script>
     Dos(document.getElementById("jsdos"), { 
-        wdosboxUrl: "/dos/dosbox/wdosbox.js" 
+        wdosboxUrl: "/games/dos/dosbox/wdosbox.js" 
     }).ready((fs, main) => {
       fs.extract("https://games.retrogames.onl/dos/d/doom-2.zip, "/doom-2"").then(() => {
         main(["-c", "cd doom-2", "-c", "doom2.bat"])

@@ -24,7 +24,7 @@
                                                    DosBoxLoader.mountZip("e",
                                                                          DosBoxLoader.fetchFile("Downloading",
                                                                                                 "https://games.retrogames.onl/dos/b/burncycle.zip")),
-                                                   DosBoxLoader.startExe("burnc")))
+                                                   DosBoxLoader.startExe("E:burnc.bat")))
       emulator.start({ waitAfterDownloading: false });
       function locateAdditionalFiles(filename) {
         if (filename === "dosbox.html.mem") {

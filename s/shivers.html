@@ -13,7 +13,7 @@
     <script type="text/javascript">
       var emulator = new Emulator(document.querySelector("#canvas"),
                                   null,
-                                   new DosBoxLoader(DosBoxLoader.emulatorJS("/dosbox/dosbox-nosync.js"),
+                                   new DosBoxLoader(DosBoxLoader.emulatorJS("/dosbox/dosbox-sync.js"),
                                                    DosBoxLoader.locateAdditionalEmulatorJS(locateAdditionalFiles),
                                                    DosBoxLoader.nativeResolution(640, 480),
                                                    DosBoxLoader.mountZip("e",
@@ -23,7 +23,7 @@
       emulator.start({ waitAfterDownloading: false });
       function locateAdditionalFiles(filename) {
         if (filename === "dosbox.html.mem") {
-          return "/dosbox/dosbox-nosync.mem";
+          return "/dosbox/dosbox-sync.mem";
         }
         return "/dosbox/"+ filename;
       }

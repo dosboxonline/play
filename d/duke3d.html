@@ -1,7 +1,7 @@
     <style>
 .onl
 {
-        height: 546px;
+        height: 456px;
         width: 728px;
     }
 </style>  
@@ -16,11 +16,11 @@
                                   null,
                                   new DosBoxLoader(DosBoxLoader.emulatorJS("/dosbox/dosbox-sync.js"),
                                                    DosBoxLoader.locateAdditionalEmulatorJS(locateAdditionalFiles),
-                                                   DosBoxLoader.nativeResolution(640, 480),
+                                                   DosBoxLoader.nativeResolution(640, 400),
                                                    DosBoxLoader.mountZip("e",
                                                                          DosBoxLoader.fetchFile("Downloading",
-                                                                                                "https://games.retrogames.onl/dos/d/duke3d1.zip")),
-                                                   DosBoxLoader.startExe("E:duke3d1.bat")))
+                                                                                                "https://games.retrogames.onl/dos/d/duke3d2.zip")),
+                                                   DosBoxLoader.startExe("E:duke3d2.bat")))
       emulator.start({ waitAfterDownloading: false });
       function locateAdditionalFiles(filename) {
         if (filename === "dosbox.html.mem") {

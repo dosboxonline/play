@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var emulator = new Emulator(document.querySelector("#canvas"),
                                   null,
-                                  new DosBoxLoader(DosBoxLoader.emulatorJS("/dosbox/dosbox-sync.js"),
+                                  new DosBoxLoader(DosBoxLoader.emulatorJS("/games/dosbox/dosbox-sync.js"),
                                                    DosBoxLoader.locateAdditionalEmulatorJS(locateAdditionalFiles),
                                                    DosBoxLoader.nativeResolution(640, 480),
                                                    DosBoxLoader.mountZip("e",
@@ -24,8 +24,8 @@
       emulator.start({ waitAfterDownloading: false });
       function locateAdditionalFiles(filename) {
         if (filename === "dosbox.html.mem") {
-          return "/dosbox/dosbox-sync.mem";
+          return "/games/dosbox/dosbox-sync.mem";
         }
-        return "/dosbox/"+ filename;
+        return "/games/dosbox/"+ filename;
       }
     </script></div></div><input type="button" value="Fullscreen" onclick="Module.requestFullscreen(document.getElementById)"style="width: 80px; height: 20px; border: none; color: black; background-color: #ad3a2b; font-size: 14px; font-family: verdana; margin-top: -1px;"/> <input type="button" value="Floppy" onclick="window.location.href='https://dosboxonline.github.io/games/p/police-quest-4.html'"style="width: 88px; height: 20px; border: none; color: black; background-color: #ad3a2b; font-size: 14px; font-family: verdana; margin-top: -1px;"/>   <span style="font-size: 14px; color: #ad3a2b; font-family: verdana; margin-top: -1px; border: none;">Click on this text to focus keyboard on game</span>
